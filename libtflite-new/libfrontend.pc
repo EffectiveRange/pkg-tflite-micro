@@ -1,0 +1,10 @@
+prefix=/usr/local
+exec_prefix=${prefix}
+includedir=${prefix}/include
+libdir=${exec_prefix}/lib
+
+Name: libfrontend
+Description: The packaging of TensorFlow libfronted as a static library
+Version: 1.0.0
+Cflags: -I${includedir}
+Libs: -L${libdir} -lfrontend -lkissfft_i8

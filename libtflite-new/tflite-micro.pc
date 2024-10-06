@@ -1,0 +1,10 @@
+prefix=/usr/local
+exec_prefix=${prefix}
+includedir=${prefix}/include
+libdir=${exec_prefix}/lib
+
+Name: libtflite-micro
+Description: The packaging of tlflite micro as a static library
+Version: 1.0.0
+Cflags: -I${includedir} -DTF_LITE_STATIC_MEMORY=1
+Libs: -L${libdir} -ltflite-micro
