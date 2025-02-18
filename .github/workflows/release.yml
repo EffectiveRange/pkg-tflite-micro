@@ -24,3 +24,7 @@ jobs:
  call_ci:
   uses: EffectiveRange/ci-workflows/.github/workflows/cmake-ci.yaml@v1
   secrets: inherit
+  with:
+    build-arch: '["armhf", "amd64"]'
+    run-sanitizers: false
+    run-coverage: false
