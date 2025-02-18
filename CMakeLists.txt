@@ -3,7 +3,7 @@ include(ERBuild NO_POLICY_SCOPE)
 include(GenerateExportHeader)
 include(CMakePackageConfigHelpers)
 
-set(libtflite_micro_VERSION 1.0.1)
+set(libtflite_micro_VERSION 1.0.2)
 project(LibTfliteMicro VERSION ${libtflite_micro_VERSION} DESCRIPTION "Pre-building and Packaging tflite-micro library" )
 
 set(CMAKE_COMPILE_WARNING_AS_ERROR ON)
